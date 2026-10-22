@@ -1,3 +1,4 @@
+<!doctype html><html lang="ms"><head><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <title>Set Induksi Radikal Bebas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -482,41 +483,69 @@ const OBJ=[{k:'rokok',name:'Asap rokok'},{k:'uv',name:'Sinar ultraungu'},{k:'uda
 /* 1 faces */
 function faceSVG(id){return `
  <path d="M84 270 q66 44 132 0 l18 60 h-168 z" id="${id}shirt"/>
- <rect x="128" y="236" width="44" height="42" rx="12" class="skin"/>
- <g id="${id}hb"><ellipse cx="150" cy="128" rx="96" ry="104"/></g>
+ <rect x="128" y="232" width="44" height="50" rx="12" class="skin"/>
+ <g id="${id}nk" fill="none" stroke="#8E5B40" stroke-width="2.5" stroke-linecap="round"><path d="M134 268 q16 6 32 0"/><path d="M136 277 q14 5 28 0"/></g>
+ <ellipse id="${id}hbY" cx="150" cy="122" rx="94" ry="88"/>
  <ellipse cx="62" cy="170" rx="16" ry="24" class="skin"/><ellipse cx="238" cy="170" rx="16" ry="24" class="skin"/>
  <ellipse cx="150" cy="165" rx="86" ry="104" class="skin"/>
- <ellipse cx="104" cy="196" rx="15" ry="9" fill="#FF8A8A" opacity=".3"/><ellipse cx="196" cy="196" rx="15" ry="9" fill="#FF8A8A" opacity=".3"/>
- <path id="${id}fr" d="M66 122 C 78 48, 222 48, 234 122 C 205 92, 175 86, 150 98 C 125 86, 95 92, 66 122 Z"/>
- <g id="${id}br" stroke-width="7" stroke-linecap="round" fill="none"><path d="M100 128 q18 -10 34 -2"/><path d="M166 126 q16 -8 34 2"/></g>
+ <g id="${id}jw"><path d="M68 196 Q60 250 112 268 Q92 244 88 208 Z" class="skin"/><path d="M232 196 Q240 250 188 268 Q208 244 212 208 Z" class="skin"/>
+  <g fill="none" stroke="#8E5B40" stroke-width="2.5" stroke-linecap="round"><path d="M68 196 Q60 250 112 268"/><path d="M232 196 Q240 250 188 268"/></g></g>
+ <ellipse id="${id}shine" cx="132" cy="80" rx="26" ry="10" fill="#fff" opacity="0" transform="rotate(-12 132 80)"/>
+ <g id="${id}blush"><ellipse cx="104" cy="198" rx="15" ry="9" fill="#FF8A8A" opacity=".3"/><ellipse cx="196" cy="198" rx="15" ry="9" fill="#FF8A8A" opacity=".3"/></g>
+ <g id="${id}hfY">
+  <path id="${id}hfYp" d="M62 156 C52 92 92 46 152 46 C214 46 250 92 238 156 C232 132 226 116 214 106 C200 120 176 116 164 102 C152 118 126 122 110 110 C96 122 82 134 72 158 Z"/>
+  <g fill="none" stroke-width="3" stroke-linecap="round" id="${id}hst"><path d="M96 74 q34 -18 70 -12"/><path d="M150 54 q40 4 62 34"/><path d="M84 100 q18 -28 54 -34"/><path d="M178 66 q28 10 40 38"/><path d="M116 92 q20 -14 44 -12"/></g>
+ </g>
+ <g id="${id}hfO" opacity="0">
+  <path d="M64 176 C54 146 60 116 78 100 C76 122 80 142 90 160 C82 160 74 166 64 176 Z" fill="#E9E9E9" stroke="#C9C9C9" stroke-width="2"/>
+  <path d="M236 176 C246 146 240 116 222 100 C224 122 220 142 210 160 C218 160 226 166 236 176 Z" fill="#E9E9E9" stroke="#C9C9C9" stroke-width="2"/>
+  <g fill="none" stroke="#D2D2D2" stroke-width="2.4" stroke-linecap="round"><path d="M70 150 q-8 -26 6 -50"/><path d="M78 160 q-6 -30 10 -54"/><path d="M230 150 q8 -26 -6 -50"/><path d="M222 160 q6 -30 -10 -54"/><path d="M118 70 q34 -16 70 -4"/><path d="M126 64 q26 -10 52 -2"/><path d="M110 80 q14 -8 26 -8"/></g>
+ </g>
+ <g id="${id}brY" stroke-width="7" stroke-linecap="round" fill="none"><path d="M100 128 q18 -10 34 -2"/><path d="M166 126 q16 -8 34 2"/></g>
+ <g id="${id}brO" opacity="0" stroke="#F2F2F2" stroke-width="4" stroke-linecap="round" fill="none">
+  <path d="M96 128 l9 -5 M103 126 l9 -7 M110 124 l10 -6 M118 124 l10 -4 M126 126 l9 -2 M98 132 l-6 4"/>
+  <path d="M204 128 l-9 -5 M197 126 l-9 -7 M190 124 l-10 -6 M182 124 l-10 -4 M174 126 l-9 -2 M202 132 l6 4"/>
+  <g stroke="#9A9A9A" stroke-width="1.6"><path d="M98 131 q16 -6 32 -2"/><path d="M202 131 q-16 -6 -32 -2"/></g>
+ </g>
  <ellipse cx="117" cy="152" rx="10" ry="11" fill="#22252B"/><ellipse cx="183" cy="152" rx="10" ry="11" fill="#22252B"/>
  <circle cx="120" cy="148" r="3.2" fill="#fff"/><circle cx="186" cy="148" r="3.2" fill="#fff"/>
- <g id="${id}bg" fill="none" stroke-width="3" stroke-linecap="round"><path d="M104 170 q13 8 26 0"/><path d="M170 170 q13 8 26 0"/></g>
+ <g id="${id}lid" opacity="0"><path d="M103 140 q14 -6 28 2 L131 152 q-14 -6 -28 0 Z" class="skin"/><path d="M169 142 q14 -8 28 -2 L197 152 q-14 -6 -28 0 Z" class="skin"/>
+  <g fill="none" stroke="#7E4E36" stroke-width="2.5" stroke-linecap="round"><path d="M103 152 q14 -6 28 0"/><path d="M169 152 q14 -6 28 0"/></g></g>
+ <g id="${id}bag" opacity="0" fill="none" stroke="#8E5B40" stroke-width="2.6" stroke-linecap="round"><path d="M104 168 q13 9 26 0"/><path d="M108 177 q10 6 20 0"/><path d="M170 168 q13 9 26 0"/><path d="M172 177 q10 6 20 0"/></g>
  <path d="M150 158 q-10 30 -2 38 q6 3 12 0" fill="none" stroke-width="3" class="line"/>
- <path id="${id}mo" d="M124 220 q26 20 52 0" fill="none" stroke-width="5" stroke-linecap="round"/>
- <g id="${id}wr" fill="none" stroke-width="3" stroke-linecap="round">
-   <path d="M108 100 q42 -12 84 0"/><path d="M114 112 q36 -9 72 0"/>
-   <path d="M90 146 l-12 -6 M90 156 l-14 0 M90 166 l-12 6"/><path d="M210 146 l12 -6 M210 156 l14 0 M210 166 l12 6"/>
-   <path d="M122 196 q-12 16 -6 34"/><path d="M178 196 q12 16 6 34"/><path d="M136 246 q14 6 28 0"/>
+ <path id="${id}moY" d="M124 220 q26 20 52 0" fill="none" stroke-width="5" stroke-linecap="round"/>
+ <path id="${id}moO" d="M128 228 q22 -9 44 0" fill="none" stroke-width="4" stroke-linecap="round" opacity="0"/>
+ <g id="${id}wl" opacity="0" fill="none" stroke="#A97456" stroke-width="2.4" stroke-linecap="round"><path d="M116 104 q34 -8 68 0"/><path d="M132 198 q-8 10 -6 18"/><path d="M168 198 q8 10 6 18"/><path d="M96 152 l-8 -3 M96 158 l-9 1"/><path d="M204 152 l8 -3 M204 158 l9 1"/></g>
+ <g id="${id}wh" opacity="0" fill="none" stroke="#7E4E36" stroke-width="3.4" stroke-linecap="round">
+  <path d="M92 90 q58 -16 116 0"/><path d="M96 103 q54 -13 108 0"/><path d="M104 116 q46 -10 92 0"/><path d="M142 124 l-2 12 M158 124 l2 12"/>
+  <path d="M94 144 l-14 -8 M93 153 l-16 -1 M94 162 l-14 7"/><path d="M206 144 l14 -8 M207 153 l16 -1 M206 162 l14 7"/>
+  <path d="M128 188 q-20 22 -12 46"/><path d="M172 188 q20 22 12 46"/><path d="M122 234 q-6 14 2 26"/><path d="M178 234 q6 14 -2 26"/>
+  <path d="M84 192 q8 18 4 34"/><path d="M216 192 q-8 18 -4 34"/><path d="M138 252 q12 6 24 0"/>
  </g>
- <g id="${id}sp" fill="#A0673F"><circle cx="96" cy="190" r="4"/><circle cx="108" cy="206" r="3"/><circle cx="200" cy="188" r="4.5"/><circle cx="190" cy="206" r="3"/><circle cx="168" cy="104" r="3.5"/><circle cx="128" cy="98" r="3"/><circle cx="214" cy="170" r="3"/></g>`;}
+ <g id="${id}sp" fill="#9C6238" opacity="0"><circle cx="98" cy="192" r="3.6"/><circle cx="202" cy="188" r="4"/><circle cx="192" cy="208" r="2.6"/><circle cx="168" cy="80" r="4"/><circle cx="124" cy="76" r="2.8"/><circle cx="214" cy="172" r="2.6"/></g>`;}
 ['faceA','faceB'].forEach(id=>$('#'+id).innerHTML=faceSVG(id));
 const lerp=(a,b,t)=>a+(b-a)*t, clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
-function mix(c1,c2,t){const p=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));const a=p(c1),b=p(c2);return '#'+a.map((v,i)=>Math.round(lerp(v,b[i],t)).toString(16).padStart(2,'0')).join('');}
+function mix(c1,c2,t){const p=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));const a=p(c1),b=p(c2);return '#'+a.map((v,i)=>Math.round(lerp(v,b[i],clamp(t))).toString(16).padStart(2,'0')).join('');}
 function paint(id,age,smoke,sun){
- const t=(age-25)/40, harm=smoke+sun;
- const score=clamp(t*(0.45+0.75*smoke+0.6*sun),0,1.6);
- const grey=clamp(harm?(age-34)/26+0.25*t*smoke:(age-48)/40);
- const hair=mix('#2B1E17','#DADADA',grey), skin=mix('#F3CBA9','#C9A58C',clamp(score*0.45+smoke*t*0.25));
- const svg=$('#'+id), q=s=>svg.querySelector('#'+id+s);
- q('hb').setAttribute('fill',hair); q('fr').setAttribute('fill',hair);
- q('br').setAttribute('stroke',mix('#2B1E17','#BDBDBD',grey*0.9));
+ const t=(age-25)/40, harm=smoke||sun;
+ const o=harm?clamp(Math.pow(t,0.9)*1.05):0;          // heavy ageing (Badrul)
+ const m=harm?0:clamp((age-40)/25);                     // mild ageing (Adam)
+ const svg=$('#'+id), q=s=>svg.querySelector('#'+id+s), op=(s,v)=>q(s).style.opacity=clamp(v);
+ const skin=harm?mix('#F3CBA9','#D2AE96',o):mix('#F3CBA9','#EDC3A0',m);
  svg.querySelectorAll('.skin').forEach(e=>{e.setAttribute('fill',skin);e.setAttribute('stroke','#B98563');e.setAttribute('stroke-width','2');});
  svg.querySelectorAll('.line').forEach(e=>e.setAttribute('stroke','#B07A58'));
- q('wr').setAttribute('stroke','#9C6A4C'); q('wr').style.opacity=clamp(score*0.95);
- q('bg').setAttribute('stroke','#9C6A4C'); q('bg').style.opacity=clamp(score*0.8);
- q('sp').style.opacity=sun?clamp((age-30)/22):clamp((age-55)/60);
- q('mo').setAttribute('stroke',smoke?mix('#C24A4A','#6B3B3B',t):'#C24A4A');
+ const hairY=harm?mix('#2B1E17','#9C9C9C',o*1.2):mix('#2B1E17','#7D7D7D',m*0.75);
+ q('hbY').setAttribute('fill',hairY); q('hfYp').setAttribute('fill',hairY);
+ q('hst').setAttribute('stroke',harm?mix('#4A372B','#BDBDBD',o*1.2):mix('#4A372B','#B5B5B5',m));
+ op('hbY',harm?1-(o-0.35)*2:1); op('hfY',harm?1-(o-0.35)*2:1); op('hfO',harm?(o-0.3)*2:0); op('shine',harm?(o-0.55)*0.8:0);
+ q('brY').setAttribute('stroke',harm?mix('#2B1E17','#BDBDBD',o):mix('#2B1E17','#6E6E6E',m*0.6));
+ op('brY',harm?1-(o-0.4)*2:1); op('brO',harm?(o-0.4)*2:0);
+ op('wl',harm?Math.min(o*1.6,1-(o-0.4)*2):m*0.85); op('wh',harm?(o-0.15)*1.25:0);
+ op('jw',harm?(o-0.4)*1.8:0); op('lid',harm?(o-0.45)*1.9:0); op('bag',harm?(o-0.25)*1.4:m*0.35);
+ op('nk',harm?(o-0.4)*1.7:m*0.3); op('blush',harm?1-o*1.4:1-m*0.3);
+ op('sp',sun?Math.min(0.7,(age-32)/22):0);
+ q('moY').setAttribute('stroke',smoke?mix('#C24A4A','#7A4A40',o):'#C24A4A'); q('moO').setAttribute('stroke','#7A4A40');
+ op('moY',harm?1-(o-0.45)*2.2:1); op('moO',harm?(o-0.45)*2.2:0);
  q('shirt').setAttribute('fill',id==='faceA'?'#0FA968':'#FF2E4D');
 }
 /* time machine */
