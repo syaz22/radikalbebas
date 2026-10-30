@@ -344,6 +344,80 @@ button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:4px so
 .dcut b{font-family:var(--display);color:#0FA968;white-space:nowrap}
 @media (max-width:760px){.dt .pp{display:none}.dt .tx{font-size:.56em;padding:3px}.drow{gap:1.5%;padding:10px 2% 40px}}
 @keyframes pop{0%{transform:scale(.85);opacity:0}100%{transform:none;opacity:1}}
+
+/* ===== klinik doktor muda ===== */
+.clin{flex:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:clamp(12px,2vw,26px);min-height:0}
+.room{position:relative;border-radius:26px;overflow:hidden;box-shadow:0 8px 0 rgba(0,0,0,.15);background:linear-gradient(#EAF8F5 0 66%,#BFE3DA 66% 67.5%,#D7EEE8 67.5%);display:flex;flex-direction:column;padding:14px 18px 16px;gap:10px;min-height:0;color:var(--ink)}
+.room::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:repeating-linear-gradient(90deg,#FF6A1A 0 22px,#FFC94A 22px 44px)}
+.qtop{display:flex;align-items:center;gap:12px;margin-top:6px}
+.led{background:#151233;border-radius:14px;padding:6px 14px;display:flex;align-items:center;gap:12px;box-shadow:inset 0 0 0 3px #2B2760}
+.led small{color:#8D88C8;font-weight:800;font-size:.7em;letter-spacing:.14em;line-height:1.1}
+.led b{font-family:"Courier New",monospace;font-size:1.9em;color:#FF8A3D;text-shadow:0 0 10px rgba(255,138,61,.9);letter-spacing:.08em;line-height:1}
+.ptabs{display:flex;gap:6px;margin-left:auto}
+.ptabs button{width:42px;height:42px;border-radius:50%;border:3px solid #fff;background:rgba(27,23,72,.12);color:var(--ink);font-weight:900;font-size:1.05em;box-shadow:0 3px 0 rgba(0,0,0,.12)}
+.ptabs button[aria-pressed="true"]{background:#FF6A1A;color:#fff;transform:scale(1.1)}
+.xsign{position:absolute;right:18px;top:78px;display:flex;flex-direction:column;align-items:center;gap:2px;opacity:.95}
+.xsign i{width:54px;height:54px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 4px 0 rgba(0,0,0,.08)}
+.xsign span{font-weight:900;font-size:.7em;letter-spacing:.18em;color:#D7263D}
+.pstage{position:relative;flex:1;min-height:0;display:flex;align-items:flex-end;justify-content:center}
+.pstage svg.pt{height:100%;max-height:30vh;width:auto}
+.sym{position:absolute;left:calc(50% + clamp(40px,6vw,90px));top:6%;width:clamp(58px,6.5vw,86px);aspect-ratio:1;border-radius:50%;background:#fff;border:4px solid #FF2E4D;display:grid;place-items:center;box-shadow:0 6px 0 rgba(0,0,0,.12)}
+.sym::after{content:"";position:absolute;inset:-10px;border-radius:50%;border:3px solid #FF2E4D;animation:ring 1.6s ease-out infinite}
+@keyframes ring{from{transform:scale(.85);opacity:.8}to{transform:scale(1.35);opacity:0}}
+.sym svg{width:70%;height:70%}
+.bub2{position:relative;background:#fff;border:3px solid #FFB36B;border-radius:22px;padding:12px 18px;font-weight:600;font-size:clamp(1em,1.6vw,1.38em);line-height:1.35;box-shadow:0 6px 0 rgba(255,106,26,.18)}
+.bub2::before{content:"";position:absolute;top:-14px;left:50%;margin-left:-12px;border:12px solid transparent;border-top:0;border-bottom:14px solid #FFB36B}
+.bub2 .who{display:block;font-family:var(--display);font-weight:800;font-size:.75em;color:#C2410C;margin-bottom:2px;letter-spacing:.02em}
+.bub2.pop{animation:pop .4s cubic-bezier(.3,1.6,.5,1)}
+.pact{display:flex;gap:10px}
+.pact button{border:none;border-radius:16px;padding:12px 16px;font-family:var(--display);font-weight:800;font-size:1.08em;box-shadow:0 6px 0 rgba(0,0,0,.2)}
+.pact .dx{background:#1B1748;color:#fff;flex:1.2}.pact .nx{background:#fff;color:var(--ink);flex:1}
+.chart{position:relative;background:repeating-linear-gradient(#FFFEF7 0 37px,#E7EEF7 37px 39px);color:var(--ink);border-radius:18px;box-shadow:0 10px 0 #7A5230,0 14px 18px rgba(0,0,0,.2);padding:20px 22px 64px;display:flex;flex-direction:column;justify-content:space-evenly;gap:10px;border:14px solid #9C6B3A;min-height:0}
+.chart::before{content:"";position:absolute;top:-30px;left:50%;width:120px;height:34px;margin-left:-60px;background:linear-gradient(#E3E7EE,#AEB6C4);border-radius:10px;box-shadow:inset 0 -5px 0 #8B94A5}
+.chd{display:flex;align-items:center;gap:12px;border-bottom:3px solid #1B1748;padding-bottom:10px}
+.chd i{flex:none;width:44px;height:44px;border-radius:12px;background:#D7263D;display:grid;place-items:center}
+.chd h3{margin:0;font-family:var(--display);font-weight:800;font-size:1.25em;letter-spacing:.06em}
+.chd small{margin-left:auto;text-align:right;font-weight:700;color:#5A5F78;font-size:.82em;line-height:1.2}
+.dxr{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center}
+.dxr .ic{width:clamp(44px,4.4vw,58px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-size:1.5em;box-shadow:0 4px 0 rgba(0,0,0,.12)}
+.dxr .l{font-weight:800;font-size:.85em;letter-spacing:.06em;text-transform:uppercase;color:#5A5F78;margin-bottom:4px}
+.dxr .v{min-height:clamp(46px,8vh,72px);border:3px dashed #C9C4E8;border-radius:14px;padding:8px 14px;font-weight:700;font-size:clamp(1em,1.55vw,1.32em);line-height:1.28;display:flex;align-items:center;color:#B8B3D6;background:rgba(255,255,255,.7)}
+.dxr.on .v{border:3px solid #1B1748;color:var(--ink);background:#fff;animation:pop .4s cubic-bezier(.3,1.6,.5,1)}
+.ecg{position:absolute;left:18px;right:18px;bottom:12px;height:40px}
+.ecg path{stroke:#0FA968;stroke-width:3;fill:none;stroke-dasharray:900;stroke-dashoffset:900;animation:ecg 2.6s linear infinite}
+@keyframes ecg{to{stroke-dashoffset:0}}
+.stamp2{position:absolute;right:20px;bottom:10px;transform:rotate(-12deg) scale(0);border:5px solid #D7263D;color:#D7263D;border-radius:12px;padding:4px 14px;font-family:var(--display);font-weight:900;font-size:1.3em;letter-spacing:.08em;transition:transform .35s cubic-bezier(.3,1.6,.5,1);background:rgba(255,255,255,.9)}
+.stamp2.on{transform:rotate(-12deg) scale(1)}
+@media (max-width:760px){.clin{grid-template-columns:1fr}.pstage svg.pt{max-height:22vh}.xsign{display:none}}
+/* ===== rumusan ===== */
+.rum{flex:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.6vw,22px);min-height:0}
+.rk{background:var(--white);color:var(--ink);border-radius:24px;padding:14px 18px 16px;display:flex;flex-direction:column;gap:8px;box-shadow:0 8px 0 rgba(0,0,0,.15);border-top:12px solid var(--k);min-height:0}
+.rk .top{display:flex;align-items:center;gap:12px}
+.rk .bd{flex:1;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.rk .ic{flex:none;width:clamp(52px,5vw,70px);aspect-ratio:1;border-radius:18px;background:var(--kl);display:grid;place-items:center}
+.rk .ic svg{width:78%;height:78%}
+.rk .kno{font-weight:900;font-size:.72em;letter-spacing:.14em;color:var(--k)}
+.rk h3{margin:0;font-family:var(--display);font-weight:800;font-size:clamp(1.05em,1.7vw,1.4em);line-height:1.15}
+.rk .lb{font-weight:800;font-size:.8em;color:#5A5F78;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+.rk .tx{font-weight:600;font-size:clamp(.95em,1.35vw,1.12em);line-height:1.3}
+.blank{position:relative;display:block;text-align:center;border-radius:12px;padding:12px 10px;background:#F1F0F8;color:transparent;border:3px dashed #C4BEE6;cursor:pointer;font-weight:800;font-size:clamp(.92em,1.3vw,1.08em);line-height:1.25;transition:background .3s}
+.blank::before{content:"?";position:absolute;inset:0;display:grid;place-items:center;color:#9A93C9;font-family:var(--display);font-size:1.2em}
+.blank.on{background:var(--kl);color:var(--ink);border:3px solid var(--k);animation:pop .4s cubic-bezier(.3,1.6,.5,1)}
+.blank.on::before{content:none}
+.bl2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.rbot{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:stretch}
+.tk2{background:linear-gradient(135deg,#FFC94A,#FF9F1C);color:var(--ink);border-radius:18px;padding:10px 18px;display:flex;align-items:center;gap:10px;font-weight:800;box-shadow:0 6px 0 rgba(0,0,0,.18)}
+.tk2 b{font-family:var(--display);font-size:1.5em}
+.brg2{background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.35);color:#fff;border-radius:18px;padding:8px 16px;display:flex;flex-direction:column;justify-content:center;font-size:.95em;line-height:1.3}
+.brg2 small{color:#5BE3A8;font-weight:900;letter-spacing:.12em;font-size:.75em}
+.brg2 b{font-weight:700}
+.rbar{display:flex;flex-direction:column;gap:6px}
+.rbar button{border:2px solid rgba(255,255,255,.7);background:transparent;color:#fff;border-radius:12px;padding:5px 12px;font-weight:700}
+.rdone{display:none;align-items:center;gap:12px;background:var(--white);color:var(--ink);border-radius:22px;padding:6px 18px 6px 8px;font-family:var(--display);font-weight:800;font-size:clamp(1em,1.6vw,1.3em);box-shadow:0 8px 0 rgba(0,0,0,.15);margin-left:auto}
+.rdone svg{width:54px;height:54px}
+.rumS.done .rdone{display:flex;animation:pop .5s cubic-bezier(.3,1.6,.5,1)}
+.rumS.done .rq{display:none}
+@media (max-width:760px){.rum{grid-template-columns:1fr}.rbot{grid-template-columns:1fr}}
 </style>
 
 <div class="deco" aria-hidden="true">
@@ -649,14 +723,60 @@ button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:4px so
       </div>
     </section>
 
-    <!-- aplikasi: domino -->
-    <section class="slide" data-bg="var(--c5)" data-min="10" aria-label="Aplikasi: Cabaran Domino">
-      <div class="hd"><div class="no">7</div><h1 data-hl="Domino">Cabaran Domino Badrul</h1><div class="q"><span>Dalam kumpulan, susun kad domino daripada <b>faktor</b> hingga <b>kesan</b>. Buang kad pengecoh!</span></div></div>
-      <div class="dom">
-        <div class="dtabs" id="dtabs"><button data-f="0" aria-pressed="true">🚬 Asap rokok</button><button data-f="1" aria-pressed="false">☀️ Sinar ultraungu</button><button data-f="2" aria-pressed="false">🏭 Pencemaran udara</button><span class="sp"></span>
-          <div class="dact"><button class="b1" id="dFall">▶ Jatuhkan domino</button><button class="b2" id="dCut">✋ Putuskan rantai</button><button class="b3" id="dReset">↺ Ulang</button></div></div>
-        <div style="position:relative;flex:1;min-height:0;display:flex"><div class="drow" id="drow"></div>
-        <div class="dcut" id="dpanel"><b>✋ Pemutus rantai:</b><span id="dpanelT"></span></div></div>
+    <!-- aplikasi: klinik doktor muda -->
+    <section class="slide" data-bg="var(--c1)" data-min="10" aria-label="Aplikasi: Klinik Doktor Muda">
+      <div class="hd"><div class="no">7</div><h1 data-hl="Doktor">Klinik Doktor Muda</h1><div class="q"><span>Kamu doktornya! Apakah <b>kesan</b> radikal bebas, <b>puncanya</b> dan <b>nasihat</b> kamu?</span></div></div>
+      <div class="clin">
+        <div class="room">
+          <div class="qtop"><div class="led"><small>NO.<br>GILIRAN</small><b id="pq">001</b></div>
+            <div class="ptabs" id="ptabs"><button data-p="0" aria-pressed="true" aria-label="Aduan 1">1</button><button data-p="1" aria-pressed="false" aria-label="Aduan 2">2</button><button data-p="2" aria-pressed="false" aria-label="Aduan 3">3</button></div></div>
+          <div class="xsign"><i><svg width="30" height="30" viewBox="0 0 30 30"><path d="M11 3h8v8h8v8h-8v8h-8v-8H3v-8h8z" fill="#D7263D"/></svg></i><span>KLINIK</span></div>
+          <div class="pstage">
+            <svg class="pt" viewBox="0 0 220 230" aria-label="Encik Badrul">
+              <rect x="40" y="146" width="140" height="12" rx="6" fill="#8D6E52"/><rect x="50" y="158" width="9" height="70" fill="#7A5C42"/><rect x="161" y="158" width="9" height="70" fill="#7A5C42"/>
+              <rect x="44" y="70" width="132" height="86" rx="18" fill="#A7C7E7"/><rect x="78" y="150" width="26" height="62" rx="8" fill="#2F3A56"/><rect x="116" y="150" width="26" height="62" rx="8" fill="#2F3A56"/><ellipse cx="88" cy="214" rx="18" ry="8" fill="#3a2a20"/><ellipse cx="132" cy="214" rx="18" ry="8" fill="#3a2a20"/>
+              <path d="M55 156q55 -70 110 0z" fill="#3B6FD8"/><rect x="58" y="128" width="104" height="34" rx="14" fill="#3B6FD8"/>
+              <rect x="98" y="106" width="24" height="18" fill="#E2A57E"/>
+              <ellipse cx="110" cy="70" rx="40" ry="45" fill="#E9B48F"/>
+              <path d="M72 62q-4 -26 14 -36M148 62q4 -26 -14 -36" stroke="#EDEDED" stroke-width="9" fill="none" stroke-linecap="round"/>
+              <path d="M86 58q8 -5 15 0M119 58q8 -5 15 0" stroke="#6b4a33" stroke-width="3" fill="none"/>
+              <circle cx="93" cy="69" r="4" fill="#3a2a20"/><circle cx="127" cy="69" r="4" fill="#3a2a20"/>
+              <path d="M82 82q6 4 12 0M126 82q6 4 12 0M92 40q18 -6 36 0M90 47q20 -5 40 0" stroke="#C98E68" stroke-width="2.5" fill="none"/>
+              <path d="M97 97q13 -8 26 0" stroke="#7a3f2a" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <rect x="70" y="132" width="40" height="14" rx="4" fill="#fff"/><text x="90" y="143" text-anchor="middle" font-size="9" font-weight="800" fill="#1B1748">BADRUL</text>
+            </svg>
+            <div class="sym" id="psym"></div>
+          </div>
+          <div class="bub2" id="pbub"><span class="who">Encik Badrul, 65 tahun</span><span id="ptext"></span></div>
+          <div class="pact"><button class="dx" id="pDx">🩺 Diagnosis</button><button class="nx" id="pNx">🔔 Pesakit seterusnya</button></div>
+        </div>
+        <div class="chart">
+          <div class="chd"><i><svg width="26" height="26" viewBox="0 0 30 30"><path d="M11 3h8v8h8v8h-8v8h-8v-8H3v-8h8z" fill="#fff"/></svg></i><h3>REKOD DIAGNOSIS</h3><small>Pesakit: Encik Badrul<br>Doktor: Kumpulan ____</small></div>
+          <div class="dxr" id="r0"><div class="ic" style="background:#FFE1E6">🧬</div><div><div class="l">Kesan radikal bebas</div><div class="v">?</div></div></div>
+          <div class="dxr" id="r1"><div class="ic" style="background:#FFF1D0">🔍</div><div><div class="l">Punca (faktor)</div><div class="v">?</div></div></div>
+          <div class="dxr" id="r2"><div class="ic" style="background:#DDF7EA">💊</div><div><div class="l">Nasihat doktor</div><div class="v">?</div></div></div>
+          <svg class="ecg" viewBox="0 0 600 40" preserveAspectRatio="none"><path d="M0 22h120l10 -14l12 30l10 -24l8 8h150l10 -14l12 30l10 -24l8 8h250"/></svg>
+          <div class="stamp2" id="pStamp">DISAHKAN ✓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- penutup: rumusan -->
+    <section class="slide rumS" data-bg="var(--c0)" data-min="5" aria-label="Penutup: Rumusan">
+      <div class="hd"><div class="no">8</div><h1 data-hl="Rumusan">Rumusan hari ini</h1><div class="q rq"><span>Jawab secara lisan, kemudian klik <b>?</b> untuk semak.</span></div><div class="rdone"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#E9B48F" stroke="#1B1748" stroke-width="3"/><path d="M10 26q-2 -16 10 -20M50 26q2 -16 -10 -20" stroke="#EDEDED" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="22" cy="28" r="3" fill="#3a2a20"/><circle cx="38" cy="28" r="3" fill="#3a2a20"/><path d="M20 39q10 9 20 0" stroke="#7a3f2a" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg><span>Badrul: “Jaga gaya hidup, kurangkan radikal bebas!”</span></div></div>
+      <div class="rum">
+        <div class="rk" style="--k:#FFB000;--kl:#FFF1C9"><div class="top"><div class="ic"><svg viewBox="0 0 60 60"><circle cx="30" cy="32" r="14" fill="#FF6B7F" stroke="#1B1748" stroke-width="3"/><circle cx="30" cy="32" r="24" fill="none" stroke="#1B1748" stroke-width="2" stroke-dasharray="4 4"/><circle cx="25" cy="8" r="5" fill="#4FA3FF" stroke="#1B1748" stroke-width="2"/><circle cx="35" cy="8" r="5" fill="none" stroke="#D7263D" stroke-width="2" stroke-dasharray="3 2"/></svg></div><div><div class="kno">KRITERIA 1</div><h3>Apa itu radikal bebas?</h3></div></div><div class="bd">
+          <div class="tx">Atom atau molekul yang</div><span class="blank">kekurangan satu elektron</span><div class="tx">menjadikannya</div><span class="blank">tidak stabil dan reaktif</span></div></div>
+        <div class="rk" style="--k:#7B2FF7;--kl:#EDE4FF"><div class="top"><div class="ic"><svg viewBox="0 0 60 60"><circle cx="18" cy="18" r="10" fill="#FFC94A" stroke="#E08A00" stroke-width="3"/><g stroke="#E08A00" stroke-width="3"><path d="M18 2v4M2 18h4M6 6l3 3M30 6l-3 3"/></g><rect x="30" y="30" width="24" height="24" fill="#8E97A8"/><rect x="34" y="16" width="6" height="16" fill="#6B7280"/><rect x="44" y="22" width="6" height="10" fill="#6B7280"/><circle cx="37" cy="10" r="5" fill="#B8C0CC"/><circle cx="12" cy="44" r="10" fill="#FF8FA0" stroke="#C4102F" stroke-width="2"/><path d="M7 44h10M12 39v10" stroke="#fff" stroke-width="2"/></svg></div><div><div class="kno">KRITERIA 2</div><h3>Dari mana datangnya?</h3></div></div><div class="bd">
+          <div class="lb">Faktor dalaman</div><div class="bl2"><span class="blank">Metabolisme</span><span class="blank">Keradangan</span></div>
+          <div class="lb">Faktor luaran (contoh)</div><span class="blank">Asap rokok</span><span class="blank">Sinar ultraungu</span><span class="blank">Pencemaran udara</span></div></div>
+        <div class="rk" style="--k:#FF2E4D;--kl:#FFE1E6"><div class="top"><div class="ic"><svg viewBox="0 0 60 60"><path d="M30 54c-20 -13 -26 -27 -17 -36c7 -7 15 -4 17 4c2 -8 10 -11 17 -4c9 9 3 23 -17 36z" fill="#FF2E4D" stroke="#9E0F27" stroke-width="3"/><path d="M30 22l-5 11l7 4l-5 12" stroke="#fff" stroke-width="3" fill="none"/></svg></div><div><div class="kno">KRITERIA 3</div><h3>Apa kesannya?</h3></div></div><div class="bd">
+          <div class="tx">Radikal bebas berlebihan merosakkan DNA dan sel, menyebabkan:</div><span class="blank">Mutasi dan kanser</span><span class="blank">Penuaan awal</span><span class="blank">Penyakit kardiovaskular</span></div></div>
+      </div>
+      <div class="rbot">
+        <div class="tk2">🎟 Tiket Keluar <b>3 minit</b></div>
+        <div class="brg2"><small>KELAS SETERUSNYA</small><span><b>Bagaimanakah badan kita melindungi sel daripada radikal bebas?</b> • Kerja rumah: Praktis Formatif 10.2 (BT m.s. 213)</span></div>
+        <div class="rbar"><button id="rAll">Tunjuk semua</button><button id="rReset">↺ Ulang</button></div>
       </div>
     </section>
 
@@ -1055,21 +1175,30 @@ $('#kkBtn').addEventListener('click',()=>kkOpen(true));$('#kkX').addEventListene
 $('#kk').addEventListener('click',e=>{if(e.target.id==='kk')kkOpen(false);});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#kk').hidden)kkOpen(false);});
 
-/* domino */
-(()=>{const D=[
- {c:['Asap rokok disedut ke dalam peparu','Radikal bebas terhasil di dalam badan','Radikal bebas merampas elektron daripada DNA sel','DNA rosak dan membentuk bahan karsinogen','Mutasi dan kanser; kerosakan peparu'],p:'Berhenti merokok dan menjauhi asap rokok, supaya radikal bebas daripada asap rokok tidak terhasil.'},
- {c:['Sinar ultraungu menembusi kulit','Radikal bebas terhasil di dalam sel kulit','Radikal bebas merampas elektron daripada DNA sel kulit','DNA sel kulit rosak','Penuaan awal (kulit berkedut); mutasi dan kanser'],p:'Memakai losyen pelindung matahari, topi atau pakaian berlengan panjang, supaya sinar ultraungu tidak sampai ke kulit.'},
- {c:['Asap kenderaan dan jerebu disedut','Radikal bebas terhasil di dalam badan','Radikal bebas menyerang sel peparu dan salur darah','Sel peparu dan salur darah rosak','Kerosakan peparu; penyakit kardiovaskular'],p:'Memakai topeng muka dan mengurangkan aktiviti luar semasa jerebu, supaya kurang bahan pencemar disedut.'}];
- let f=0,tm=[];const row=$('#drow');
- const pips=n=>Array.from({length:n},()=>'<i></i>').join('');
- const build=()=>{tm.forEach(clearTimeout);tm=[];row.classList.remove('cut');$("#dpanel").classList.remove('on');
-  row.innerHTML=D[f].c.map((t,i)=>`<div class="dt${i===0?' first':''}${i===4?' last':''}"><div class="pp">${pips(i+1)}</div><div class="tx"><b>?</b><span>${t}</span></div></div>`+(i===0?'<div class="shield" aria-hidden="true">✋</div>':'')).join('');
-  $$('#dtabs button[data-f]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.f===f)));};
- $$('#dtabs button[data-f]').forEach(b=>b.addEventListener('click',()=>{f=+b.dataset.f;SFX.pop();build();}));
- $('#dFall').addEventListener('click',()=>{build();const t=$$('#drow .dt');t.forEach((d,i)=>tm.push(setTimeout(()=>{d.classList.add('fall');i===4?SFX.broken():SFX.drop();},350+i*650)));});
- $('#dCut').addEventListener('click',()=>{const t=$$('#drow .dt');t.forEach(d=>d.classList.add('fall'));row.classList.add('cut');$("#dpanelT").textContent=D[f].p;$("#dpanel").classList.add('on');SFX.win();});
- $('#dReset').addEventListener('click',()=>{SFX.pop();build();});
- window.addEventListener('slidechange',build);build();})();
+const SYM=['<svg viewBox="0 0 60 60"><path d="M28 10v16M32 10v16" stroke="#C2185B" stroke-width="4"/><path d="M26 22q-16 -6 -18 18q0 12 10 12q10 0 10 -12z" fill="#FF8FB1" stroke="#C2185B" stroke-width="3"/><path d="M34 22q16 -6 18 18q0 12 -10 12q-10 0 -10 -12z" fill="#FF8FB1" stroke="#C2185B" stroke-width="3"/><circle cx="18" cy="38" r="4" fill="#7A1E3A"/></svg>',
+ '<svg viewBox="0 0 60 60"><ellipse cx="30" cy="32" rx="20" ry="23" fill="#F6CDAE" stroke="#C98E68" stroke-width="3"/><path d="M12 24q-2 -14 10 -18M48 24q2 -14 -10 -18" stroke="#BDBDBD" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M20 20q10 -4 20 0M19 25q11 -3 22 0M17 40q3 3 6 0M37 40q3 3 6 0" stroke="#A0694A" stroke-width="2" fill="none"/><circle cx="23" cy="32" r="2.5" fill="#3a2a20"/><circle cx="37" cy="32" r="2.5" fill="#3a2a20"/></svg>',
+ '<svg viewBox="0 0 60 60"><path d="M30 52c-18 -12 -24 -24 -16 -32c6 -6 14 -4 16 4c2 -8 10 -10 16 -4c8 8 2 20 -16 32z" fill="#FF2E4D" stroke="#9E0F27" stroke-width="3"/><path d="M30 22l-4 10l6 4l-4 10" stroke="#fff" stroke-width="3" fill="none"/></svg>'];
+/* klinik doktor muda */
+(()=>{const P=[
+ {a:'“Doktor, saya batuk berpanjangan dan sesak nafas. Imbasan sinar-X menunjukkan ada sel peparu saya yang tumbuh tidak terkawal.”',v:['Radikal bebas merosakkan DNA sel peparu → mutasi dan kanser peparu','Asap rokok','Berhenti merokok dan jauhi asap rokok']},
+ {a:'“Doktor, kulit muka saya berkedut teruk dan rambut saya beruban, padahal kawan sebaya saya tidak begitu.”',v:['Penuaan awal: sel kulit rosak, kulit berkedut','Sinar ultraungu (bekerja di bawah matahari tanpa pelindung)','Pakai losyen pelindung matahari, topi dan baju berlengan panjang']},
+ {a:'“Doktor, dada saya selalu sakit dan saya cepat penat bila naik tangga.”',v:['Penyakit kardiovaskular (jantung dan salur darah)','Pencemaran udara (asap kenderaan, jerebu) dan asap rokok','Pakai topeng muka semasa jerebu dan berhenti merokok']}];
+ let k=0,tm=[];
+ const show=()=>{tm.forEach(clearTimeout);tm=[];$('#ptext').textContent=P[k].a;$('#psym').innerHTML=SYM[k];$('#pq').textContent='00'+(k+1);const b=$('#pbub');b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop');
+  for(let i=0;i<3;i++){const r=$('#r'+i);r.classList.remove('on');r.querySelector('.v').textContent='?';}
+  $('#pStamp').classList.remove('on');$$('#ptabs button').forEach(x=>x.setAttribute('aria-pressed',String(+x.dataset.p===k)));
+  $('#pNx').textContent=k===2?'↺ Pesakit pertama':'🔔 Pesakit seterusnya';};
+ $('#pDx').addEventListener('click',()=>{tm.forEach(clearTimeout);tm=[];for(let i=0;i<3;i++)tm.push(setTimeout(()=>{const r=$('#r'+i);r.querySelector('.v').textContent=P[k].v[i];r.classList.add('on');SFX.ding();},250+i*700));
+  tm.push(setTimeout(()=>{$('#pStamp').classList.add('on');SFX.win();},2500));});
+ $('#pNx').addEventListener('click',()=>{k=(k+1)%3;SFX.ding();show();});
+ $$('#ptabs button').forEach(x=>x.addEventListener('click',()=>{k=+x.dataset.p;SFX.pop();show();}));
+ window.addEventListener('slidechange',()=>{k=0;show();});show();})();
+
+/* rumusan */
+(()=>{const S=$('.rumS'),B=$$('.rumS .blank');const chk=()=>{if(B.every(b=>b.classList.contains('on'))&&!S.classList.contains('done')){S.classList.add('done');SFX.win();}};
+ B.forEach(b=>b.addEventListener('click',()=>{if(!b.classList.contains('on')){b.classList.add('on');SFX.ding();chk();}}));
+ $('#rAll').addEventListener('click',()=>{B.forEach(b=>b.classList.add('on'));chk();});
+ const rs=()=>{B.forEach(b=>b.classList.remove('on'));S.classList.remove('done');};$('#rReset').addEventListener('click',()=>{rs();SFX.pop();});window.addEventListener('slidechange',rs);})();
 
 /* teacher notes (hidden by default) */
 const NOTES=[
@@ -1080,7 +1209,8 @@ const NOTES=[
  'FASA PENSTRUKTURAN: baca definisi bersama murid. Klik “Serlahkan kata kunci” untuk menyerlahkan lima kata kunci satu demi satu. Murid salin definisi. Kemudian tunjuk model molekul (bola polistirena dan guli).',
  'FASA PENSTRUKTURAN: klik setiap faktor. Radikal bebas terbang masuk ke badan dan faktor masuk ke Peta Pokok (dalaman/luaran). Minta murid teka “Dalaman atau luaran?” sebelum klik setiap faktor dan terangkan ringkas. Murid salin Peta Pokok ke Bahagian A Lembaran Kerja.',
  'FASA PENSTRUKTURAN: tekan ▶ Main (lebih kurang 45 saat). Selepas tamat, tanya: “Bagaimanakah radikal bebas merosakkan DNA?” dan “Sebutkan dua kesan radikal bebas.”',
- 'APLIKASI – CABARAN DOMINO (10 minit): setiap kumpulan (3–4 orang) dapat satu sampul (satu faktor Badrul): 5 kad domino bercampur + 2 kad pengecoh. Susun rantai dan tulis 2 “pemutus rantai” (langkah pencegahan) dalam 4 minit. Semakan: pilih faktor, klik “Jatuhkan domino” sambil wakil kumpulan menerangkan, kemudian klik “Putuskan rantai”.'
+ 'APLIKASI – KLINIK DOKTOR MUDA (10 minit): murid dalam kumpulan 3–4 orang menjadi doktor. Baca Aduan 1, beri 2 minit untuk kumpulan berbincang dan menulis diagnosis dalam Lembaran Kerja Bahagian B (kesan, punca, nasihat). Minta 1 kumpulan menjawab, kemudian klik “Diagnosis” untuk semakan. Ulang untuk Aduan 2 dan 3.',
+ 'PENUTUP (5 minit): 1) Tanya setiap soalan (KK 1–3); murid jawab secara lisan, klik ? untuk semak. Bila semua terbuka, Badrul beri pesanan (1 minit). 2) Edar Tiket Keluar, murid jawab dan bulatkan tahap kefahaman (3 minit). 3) Baca soalan untuk kelas seterusnya dan beri kerja rumah (1 minit).'
 ];
 
 /* navigation */
